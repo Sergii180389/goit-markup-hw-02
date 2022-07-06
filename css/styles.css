@@ -1,0 +1,253 @@
+/* колір заголовків #212121 */
+/* колір основного тексту  #757575 */
+/* додатковий колір секцій та інтерактивних кнопок #F5F4FA */
+/* білий колір #FFFFFF */
+/* акцент #2196F3 */
+/* колір фону hero and footer #2F303A */
+/* колір mail and tel in footer rgba(255, 255, 255, 0.6) */
+/* колір WEB  в лого #000000 */
+
+/* ROOT */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+}
+
+/* BODY */
+body {
+  width: 1600px;
+  height: 2349px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+/* Cкидування точок в списках ul*/
+.list {
+  list-style: none;
+}
+
+/* HEADER SECTION*/
+
+/* logo header*/
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+.logo-span {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo-span:hover .logo-span:focus {
+  color: var(--accent-color);
+}
+
+/* site nav */
+.site-nav .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* посилання mail tel */
+.auth-nav .link-mail,
+.auth-nav .link-tel {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.auth-nav .link-mail:hover,
+.auth-nav .link-mail:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav .link-tel:hover,
+.auth-nav .link-tel:focus {
+  color: var(--accent-color);
+}
+
+/* SECTION title*/
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+/* HERO SECTION*/
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.hero .btn {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.9;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* section benefits */
+.benefit .title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+/* section example */
+
+/* section employees */
+.employees .title {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.employees .position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* FOOTER SECTION*/
+.footer {
+  background-color: #2f303a;
+}
+
+/* logo footer */
+.footer .logo {
+  color: var(--primary-white-color);
+}
+
+.footer .logo-span {
+  color: var(--accent-color);
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+  color: var(--accent-color);
+}
+
+.footer .logo-span:hover,
+.footer .logo-span:focus {
+  color: var(--accent-color);
+}
+
+.link-address {
+  color: var(--primary-white-color);
+}
+
+.link-address:hover,
+.link-address:focus {
+  color: var(--accent-color);
+}
+
+.footer .link-mail,
+.footer .link-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .link-mail:hover,
+.footer .link-tel:hover {
+  color: var(--accent-color);
+}
+
+.footer .link-mail:focus,
+.footer .link-tel:focus {
+  color: var(--accent-color);
+}
+/* Стилі сторінки PORTFOLIO */
+
+/* PROJECT */
+.project {
+  color: var(--title-text-color);
+}
+
+.btn-secondary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.pointer .btn-secondary {
+  cursor: pointer;
+}
+
+.list.work .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.list.work .work {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
