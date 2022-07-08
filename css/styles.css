@@ -18,10 +18,6 @@
 
 /* BODY */
 body {
-  width: 1600px;
-  height: 2349px;
-
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -39,17 +35,19 @@ body {
 
 /* logo header*/
 .logo {
-  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
+  font-family: 'Raleway';
   color: #000000;
 }
 .logo-span {
-  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
+  font-family: 'Raleway';
   color: var(--accent-color);
 }
 
@@ -57,24 +55,26 @@ body {
 .logo:focus {
   color: var(--accent-color);
 }
-.logo-span:hover .logo-span:focus {
+.logo-span:hover,
+.logo-span:focus {
   color: var(--accent-color);
 }
 
 /* site nav */
-.site-nav .link {
+.site-nav .link-nav {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--title-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link-nav:hover,
+.site-nav .link-nav:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav .link-nav.current {
   color: var(--accent-color);
 }
 /* посилання mail tel */
@@ -83,6 +83,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--primary-text-color);
 }
 
@@ -99,7 +100,6 @@ body {
 /* SECTION title*/
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -113,10 +113,8 @@ body {
 }
 .hero-title {
   width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
@@ -129,10 +127,11 @@ body {
 }
 
 .hero .btn {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.9;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
 
+  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -141,8 +140,8 @@ body {
 }
 
 /* section benefits */
-.benefit .title {
-  font-weight: 700;
+.section.benefit .benefit-title {
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
@@ -151,7 +150,8 @@ body {
 /* section example */
 
 /* section employees */
-.employees .title {
+.employees .employees-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -187,27 +187,31 @@ body {
   color: var(--accent-color);
 }
 
-.link-address {
+.list.address .link-address {
+  font-style: normal;
+  text-decoration: none;
   color: var(--primary-white-color);
 }
 
-.link-address:hover,
-.link-address:focus {
+.list.address .link-address:hover,
+.list.address .link-address:focus {
   color: var(--accent-color);
 }
 
-.footer .link-mail,
-.footer .link-tel {
+.list.address .link-mail,
+.list.address .link-tel {
+  font-style: normal;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .link-mail:hover,
-.footer .link-tel:hover {
+.list.address .link-mail:hover,
+.list.address .link-mail:focus {
   color: var(--accent-color);
 }
 
-.footer .link-mail:focus,
-.footer .link-tel:focus {
+.list.address .link-tel:hover,
+.list.address .link-tel:focus {
   color: var(--accent-color);
 }
 /* Стилі сторінки PORTFOLIO */
@@ -236,18 +240,15 @@ body {
   cursor: pointer;
 }
 
-.list.work .title {
-  font-weight: 700;
+.list.work .title-work {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
-.list.work .work {
-  font-weight: 400;
+.list.work .work-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: #757575;
 }
