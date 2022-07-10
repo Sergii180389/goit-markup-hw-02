@@ -13,7 +13,10 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --secondary-background-color: #f5f4fa;
+  --secondary-section-button: #f5f4fa;
+  --background-footer-section: #2f303a;
+  --logo-black: #000000;
+  --footer-mail-tel: rgba(255, 255, 255, 0.6);
 }
 
 /* BODY */
@@ -40,7 +43,7 @@ body {
   line-height: 1.19;
   text-decoration: none;
   font-family: 'Raleway';
-  color: #000000;
+  color: var(--logo-black);
 }
 .logo-span {
   font-weight: 700;
@@ -109,7 +112,7 @@ body {
 
 /* HERO SECTION*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-footer-section);
 }
 .hero-title {
   width: 696px;
@@ -165,7 +168,7 @@ body {
 
 /* FOOTER SECTION*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-footer-section);
 }
 
 /* logo footer */
@@ -202,7 +205,7 @@ body {
 .list.address .link-tel {
   font-style: normal;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-mail-tel);
 }
 
 .list.address .link-mail:hover,
@@ -226,8 +229,9 @@ body {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+  font-family: inherit;
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--secondary-section-button);
 }
 
 .btn-secondary:hover,
@@ -250,5 +254,5 @@ body {
 .list.work .work-text {
   font-size: 16px;
   line-height: 1.88;
-  color: #757575;
+  color: var(--primary-text-color);
 }
